@@ -27,6 +27,11 @@ src="https://www.facebook.com/tr?id=1646196576504583&ev=PageView&noscript=1"
     <p>This website is created for my Meta Pixel and Conversion API practice assignment.</p>
 
     <button id="leadButton">Test Lead Event</button>
+    <script>
+document.getElementById('leadButton').addEventListener('click', function() {
+    fbq('track', 'Lead');
+});
+</script>
 
 </body>
 </html>
